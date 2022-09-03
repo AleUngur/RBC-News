@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link href="style.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!--Icons-->
+    <script
+      src="https://kit.fontawesome.com/822b622528.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>RBC NEWS</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid text-white">
+          <a class="navbar-brand mx-2" href="home.html">
+            <img
+              src="img/logo.jpg"
+              alt=""
+              width="55"
+              height="35"
+              class="d-inline-block align-text-top"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  News
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#recent-news-section"
+                      >Recent</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#all-news-section">All</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#live-section"
+                  >Live</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#contact-section"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+            <a
+              class="btn btn-danger"
+              id="donate-btn"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasRight"
+              aria-controls="offcanvasRight"
+            >
+              <i class="fa-solid fa-heart"></i> Donate
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--Offcanvas Donate-->
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="offcanvasRight"
+      aria-labelledby="offcanvasRightLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 id="offcanvasRightLabel">Be kind and give your support</h5>
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <p>
+          We offer 20% of our profits to charity, but you can help directly
+          below:
+        </p>
+        <ul>
+          <li>
+            East Africa Hunger Relief Fund<a
+              href="https://www.globalgiving.org/projects/east-africa-hunger-relief-fund/"
+              target="_blank"
+            >
+              >donate</a
+            >
+          </li>
+          <li>
+            Hope in Crisis Fund<a
+              href="https://www.globalgiving.org/projects/hope-in-crisis-fund/"
+              target="_blank"
+            >
+              >donate</a
+            >
+          </li>
+          <li>
+            Climate change & conflict in Haiti<a
+              href="https://www.globalgiving.org/projects/covidclimateconflict/"
+              target="_blank"
+            >
+              >donate</a
+            >
+          </li>
+          <li>
+            Afghanistan Earthquake Relief Fund<a
+              href="https://www.globalgiving.org/projects/afghanistan-earthquake-relief-fund/"
+              target="_blank"
+            >
+              >donate</a
+            >
+          </li>
+        </ul>
+        <img class="container-fluid my-2" src="img/donate.jpg" alt="image" />
+      </div>
+    </div>
+
+    <section class="banner">
+      <div class="row container-fluid justify-content-center md-5 mt-3">
+        <img class="img-responsive" src="img/banner.jpg" alt="banner" />
+      </div>
+    </section>
+
+    <section class="news oswald-font pb-2" id="recent-news-section">
+      <div class="container mt-md-5">
+        <h2 class="mx-4 my-0 text-center">Recent News</h2>
+        <ul
+          class="row d-lg-flex list-unstyled image-block justify-content-center px-lg-0 mx-lg-0"
+        >
+          <li class="col-lg-4 col-md-5 image-block full-width p-3">
+            <div class="image-block-inner">
+              <a class="mh-100" href="stire1.html">
+                <img
+                  src="img/shinzo.png"
+                  alt="Shinzo Abe's policies take
+                  on renewed significance for Japan"
+                  class="img-responsive w-100"
+              /></a>
+              <span class="hp-posts-cat">People</span>
+              <h4 class="mt-3">
+                <a href="stire1.html"
+                  >Shinzo Abe's policies take on renewed significance for
+                  Japan</a
+                >
+              </h4>
+              <!--  <p></p> -->
+              <a href="stire1.html" class="read-more">Read more &gt;</a>
+            </div>
+            <!-- .image-block-inner -->
+          </li>
+          <li class="col-lg-4 col-md-5 image-block full-width p-3">
+            <div class="image-block-inner">
+              <a class="mh-100" href="stire2.html">
+                <img
+                  src="img/boundaries.png"
+                  alt="The boundaries we set help us guard our energy. Here's how to do it"
+                  class="img-responsive w-100"
+              /></a>
+              <span class="hp-posts-cat">Lifestyle</span>
+              <h4 class="mt-3">
+                <a href="stire2.html"
+                  >The boundaries we set help us guard our energy. Here's how to
+                  do it</a
+                >
+              </h4>
+              <!--  <p></p> -->
+              <a href="stire2.html" class="read-more">Read more &gt;</a>
+            </div>
+            <!-- .image-block-inner -->
+          </li>
+          <li class="col-lg-4 col-md-5 image-block full-width p-3">
+            <div class="image-block-inner">
+              <a class="mh-100" href="stire3.html">
+                <img
+                  src="img/war1.png"
+                  alt="An artist in Ukraine captures the war in black and white"
+                  class="img-responsive w-100"
+              /></a>
+              <span class="hp-posts-cat">War</span>
+              <h4 class="mt-3">
+                <a href="stire3.html"
+                  >An artist in Ukraine captures the war in black and white</a
+                >
+              </h4>
+              <!--  <p></p> -->
+              <a href="stire3.html" class="read-more">Read more &gt;</a>
+            </div>
+            <!-- .image-block-inner -->
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="live pb-2 oswald-font" id="live-section">
+      <div class="container mt-md-5">
+        <h2 class="mx-4 my-0 text-center mb-3">Follow us live:</h2>
+        <div class="row justify-content-md-center">
+          <div class="col-md-10 col-lg-5 ratio ratio-16x9">
+            <iframe
+              src="https://www.youtube.com/embed/9Auq9mYxFEE"
+              title="YouTube video"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="all-news pb-2 oswald-font" id="all-news-section">
+      <div class="container mt-md-5">
+        <h2 class="mx-4 my-0 text-center mb-3">News</h2>
+        <!--Row 1-->
+        <div class="row pb-3 justify-content-md-center">
+          <div class="col-lg-6 col-md-12">
+            <div class="row g-0 bg-light position-relative">
+              <div class="col-md-6 mb-md-1 p-md-4">
+                <img src="img/shinzo.png" class="w-100" alt="iamge" />
+              </div>
+              <div class="col-md-6 p-4 ps-md-0">
+                <h5 class="mt-0 text-orange">
+                  SHINZO ABE'S POLICIES TAKE ON RENEWED SIGNIFICANCE FOR JAPAN
+                </h5>
+                <p>
+                  Shinzo Abe was Japan's longest-serving and perhaps its most
+                  consequential prime minister in the post-war era. Abe
+                  championed policies that have reshaped Japanese foreign and
+                  defense policy to this day.
+                </p>
+                <a href="stire1.html" class="stretched-link">Read more &gt;</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <div class="row g-0 bg-light position-relative">
+              <div class="col-md-6 mb-md-0 p-md-4">
+                <img src="img/boundaries.png" class="w-100" alt="image" />
+              </div>
+              <div class="col-md-6 p-4 ps-md-0">
+                <h5 class="mt-0 text-orange">
+                  THE BOUNDARIES WE SET HELP US GUARD OUR ENERGY. HERE'S HOW TO
+                  DO IT
+                </h5>
+                <p>
+                  Do you ever feel put out by too many social events? Fed up by
+                  all the work requests you feel pressure to say yes to?
+                  Bothered by small asks that make you feel big mad?
+                </p>
+                <a href="stire2.html" class="stretched-link">Read more &gt;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Row 2-->
+        <div class="row pb-3 justify-content-md-center">
+          <div class="col-lg-6 col-md-12">
+            <div class="row g-0 bg-light position-relative">
+              <div class="col-md-6 mb-md-0 p-md-4">
+                <img src="img/war1.png" class="w-100" alt="image" />
+              </div>
+              <div class="col-md-6 p-4 ps-md-0">
+                <h5 class="mt-0 text-orange">
+                  AN ARTIST IN UKRAINE CAPTURES THE WAR IN BLACK AND WHITE
+                </h5>
+                <p>
+                  "Since the beginning of the war, my main focus has been to
+                  show this war through photography," says Vladyslav
+                  Krasnoshchok, a medical doctor and artist in the Ukrainian
+                  city of Kharkiv.
+                </p>
+                <a href="stire3.html" class="stretched-link">Read more &gt;</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <div class="row g-0 bg-light position-relative">
+              <div class="col-md-6 mb-md-0 p-md-4">
+                <img src="img/shooting1.png" class="w-100" alt="image" />
+              </div>
+              <div class="col-md-6 p-4 ps-md-0">
+                <h5 class="mt-0 text-orange">
+                  He survived a mass shooting near Highland Park 34 years ago.
+                  Now, he helps others
+                </h5>
+                <p>
+                  Another deadly mass shooting in America. Another news cycle
+                  spent discussing the gunman, the investigation, and most
+                  importantly, the lives lost.
+                </p>
+                <a href="stire4.html" class="stretched-link">Read more &gt;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Row 3-->
+        <div class="row pb-3 justify-content-md-center">
+          <div class="col-lg-6 col-md-12">
+            <div class="row g-0 bg-light position-relative">
+              <div class="col-md-6 mb-md-0 p-md-4">
+                <img src="img/musk.png" class="w-100" alt="image" />
+              </div>
+              <div class="col-md-6 p-4 ps-md-0">
+                <h5 class="mt-0 text-orange">
+                  Elon Musk wants out of the Twitter deal. It could end up
+                  costing at least $1 billion
+                </h5>
+                <p>
+                  Elon Musk wants to break off his agreement to buy Twitter.
+                </p>
+                <a href="stire5.html" class="stretched-link">Read more &gt;</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <div class="row g-0 bg-light position-relative">
+              <div class="col-md-6 mb-md-0 p-md-4">
+                <img src="img/cleaning1.png" class="w-100" alt="image" />
+              </div>
+              <div class="col-md-6 p-4 ps-md-0">
+                <h5 class="mt-0 text-orange">
+                  Start cleaning your home more sustainably with these tips
+                </h5>
+                <p>
+                  Cleaning is a fundamental part of life. We have to clean
+                  ourselves, our clothes, our dishes, our homes – and for each
+                  of these tasks, there are countless products.
+                </p>
+                <a href="stire6.html" class="stretched-link">Read more &gt;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Row 4-->
+        <div class="row pb-3 justify-content-md-center">
+          <div class="col-lg-6 col-md-12">
+            <div class="row g-0 bg-light position-relative">
+              <div class="col-md-6 mb-md-1 p-md-4">
+                <img src="img/shinzo.png" class="w-100" alt="iamge" />
+              </div>
+              <div class="col-md-6 p-4 ps-md-0">
+                <h5 class="mt-0 text-orange">
+                  SHINZO ABE'S POLICIES TAKE ON RENEWED SIGNIFICANCE FOR JAPAN
+                </h5>
+                <p>
+                  Shinzo Abe was Japan's longest-serving and perhaps its most
+                  consequential prime minister in the post-war era. Abe
+                  championed policies that have reshaped Japanese foreign and
+                  defense policy to this day.
+                </p>
+                <a href="stire1.html" class="stretched-link">Read more &gt;</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <div class="row g-0 bg-light position-relative">
+              <div class="col-md-6 mb-md-0 p-md-4">
+                <img src="img/boundaries.png" class="w-100" alt="image" />
+              </div>
+              <div class="col-md-6 p-4 ps-md-0">
+                <h5 class="mt-0 text-orange">
+                  THE BOUNDARIES WE SET HELP US GUARD OUR ENERGY. HERE'S HOW TO
+                  DO IT
+                </h5>
+                <p>
+                  Do you ever feel put out by too many social events? Fed up by
+                  all the work requests you feel pressure to say yes to?
+                  Bothered by small asks that make you feel big mad?
+                </p>
+                <a href="stire2.html" class="stretched-link">Read more &gt;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Row 5-->
+        <div class="row pb-3 justify-content-md-center">
+          <div class="col-lg-6 col-md-12">
+            <div class="row g-0 bg-light position-relative">
+              <div class="col-md-6 mb-md-0 p-md-4">
+                <img src="img/war1.png" class="w-100" alt="image" />
+              </div>
+              <div class="col-md-6 p-4 ps-md-0">
+                <h5 class="mt-0 text-orange">
+                  AN ARTIST IN UKRAINE CAPTURES THE WAR IN BLACK AND WHITE
+                </h5>
+                <p>
+                  "Since the beginning of the war, my main focus has been to
+                  show this war through photography," says Vladyslav
+                  Krasnoshchok, a medical doctor and artist in the Ukrainian
+                  city of Kharkiv.
+                </p>
+                <a href="stire3.html" class="stretched-link">Read more &gt;</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <div class="row g-0 bg-light position-relative">
+              <div class="col-md-6 mb-md-0 p-md-4">
+                <img src="img/shooting1.png" class="w-100" alt="image" />
+              </div>
+              <div class="col-md-6 p-4 ps-md-0">
+                <h5 class="mt-0 text-orange">
+                  He survived a mass shooting near Highland Park 34 years ago.
+                  Now, he helps others
+                </h5>
+                <p>
+                  Another deadly mass shooting in America. Another news cycle
+                  spent discussing the gunman, the investigation, and most
+                  importantly, the lives lost.
+                </p>
+                <a href="stire4.html" class="stretched-link">Read more &gt;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Row 6-->
+        <div class="row pb-3 justify-content-md-center">
+          <div class="col-lg-6 col-md-12">
+            <div class="row g-0 bg-light position-relative">
+              <div class="col-md-6 mb-md-0 p-md-4">
+                <img src="img/musk.png" class="w-100" alt="image" />
+              </div>
+              <div class="col-md-6 p-4 ps-md-0">
+                <h5 class="mt-0 text-orange">
+                  Elon Musk wants out of the Twitter deal. It could end up
+                  costing at least $1 billion
+                </h5>
+                <p>
+                  Elon Musk wants to break off his agreement to buy Twitter.
+                </p>
+                <a href="stire5.html" class="stretched-link">Read more &gt;</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <div class="row g-0 bg-light position-relative">
+              <div class="col-md-6 mb-md-0 p-md-4">
+                <img src="img/cleaning1.png" class="w-100" alt="image" />
+              </div>
+              <div class="col-md-6 p-4 ps-md-0">
+                <h5 class="mt-0 text-orange">
+                  Start cleaning your home more sustainably with these tips
+                </h5>
+                <p>
+                  Cleaning is a fundamental part of life. We have to clean
+                  ourselves, our clothes, our dishes, our homes – and for each
+                  of these tasks, there are countless products.
+                </p>
+                <a href="stire6.html" class="stretched-link">Read more &gt;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact pb-2" id="contact-section">
+      <div class="container mt-md-5">
+        <h2 class="mx-4 py-4 text-center text-white">Contact</h2>
+        <div class="row pb-4">
+          <div class="col-lg-4 col-md-6 text-white">
+            <div class="row">
+              <p>
+                104 Tolworth Broadway, Tolworth, Surbiton KT6 7HT,<br />
+                United Kingdom
+              </p>
+            </div>
+            <div class="row"><p>+442083990763</p></div>
+            <div class="row"><p>resources@rbcnews.com</p></div>
+            <div class="row"><p>contact@rbcnews.com</p></div>
+          </div>
+          <div class="col-lg-4 col-md-6 text-center">
+            <div class="row mb-3">
+              <a href="https://www.facebook.com/bbcnews" target="_blank"
+                >Facebook</a
+              >
+            </div>
+            <div class="row mb-3">
+              <a href="https://www.instagram.com/bbcnews/" target="_blank"
+                >Insagram</a
+              >
+            </div>
+            <div class="row mb-3">
+              <a href="https://twitter.com/bbcnews" target="_blank">Twitter</a>
+            </div>
+            <div class="row mb-3">
+              <a href="https://twitter.com/bbcnews" target="_blank">Twitter</a>
+            </div>
+          </div>
+          <div class="col-lg-4 text-white">
+            <h5 class="text-center">Contact us about:</h5>
+            <div class="row mb-2">
+              <!-- Button trigger modal1 -->
+              <button
+                type="button"
+                class="btn btn-light"
+                data-bs-toggle="modal"
+                data-bs-target="#tip"
+              >
+                News tip/story idea
+              </button>
+            </div>
+            <div class="row mb-2">
+              <!-- Button trigger modal2 -->
+              <button
+                type="button"
+                class="btn btn-light"
+                data-bs-toggle="modal"
+                data-bs-target="#departments"
+              >
+                RBC departments
+              </button>
+            </div>
+            <div class="row">
+              <!-- Button trigger modal2 -->
+              <button
+                type="button"
+                class="btn btn-light"
+                data-bs-toggle="modal"
+                data-bs-target="#assistance"
+              >
+                Technical assistance
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal 1 Tips-->
+    <div
+      class="modal fade"
+      id="tip"
+      tabindex="-1"
+      aria-labelledby="tip"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Tips</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            If you have a story to share or some interesting tips for us, please
+            write us an email
+            <a href="mailto:ungur.alexandra.au@gmail.com" role="button">
+              here
+            </a>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 2 Technical assistance-->
+    <div
+      class="modal fade"
+      id="departments"
+      tabindex="-1"
+      aria-labelledby="departments"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Departments</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            If you want to contact one of our departments, please write us an
+            email
+            <a href="mailto:ungur.alexandra.au@gmail.com" role="button">
+              here
+            </a>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 3 Departments-->
+    <div
+      class="modal fade"
+      id="assistance"
+      tabindex="-1"
+      aria-labelledby="assistance"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Assistance</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            If you have any technical problems, or you observed some
+            malfunctions on the website, please write us
+            <a href="mailto:ungur.alexandra.au@gmail.com" role="button">
+              here
+            </a>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
